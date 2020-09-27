@@ -1,3 +1,4 @@
 # MO824 - Assignment 1
 
-To generate the instances to this problem> `make generate_ins`
+- Install python requirements: `make install`
+- Generate 10 instances to this problem: `make generate_ins`

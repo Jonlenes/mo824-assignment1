@@ -1,2 +1,8 @@
+install:
+	pip install -r src/requirements.txt
+
 generate_ins:
-	python generate_instance.py
+	python src/generate_instance.py
+
+test:
+	python -m pytest .
