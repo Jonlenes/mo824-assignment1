@@ -13,17 +13,17 @@ def generate_instance(j):
     n_P = np.random.randint(5, 10)
 
     # demanda do cliente j em unidades de papel do tipo p;
-    D = np.random.randint(10, 100, size=(j, n_P))
+    D = np.random.randint(10, 20, size=(j, n_P))
     
     # unidades de matéria-prima m necessárias para produzir
     # uma unidade de papel do tipo p na máquina l;
-    r = np.random.randint(1, 10, size=(n_M, n_P, n_L))
+    r = np.random.randint(1, 5, size=(n_M, n_P, n_L))
     
     # unidades de matéria-prima m disponíveis na fábrica f;
-    R = np.random.randint(100, 1000, size=(n_M, n_F))
+    R = np.random.randint(800, 1000, size=(n_M, n_F))
     
     # capacidade disponível de produção, em unidades de papel, da máquina l na fábrica f;
-    C = np.random.randint(10, 100, size=(n_L, n_F))
+    C = np.random.randint(80, 100, size=(n_L, n_F))
     
     # custo unitário de produção do papel tipo p utilizando a máquina l na fábrica f;
     p = np.random.randint(10, 100, size=(n_P, n_L, n_F))
