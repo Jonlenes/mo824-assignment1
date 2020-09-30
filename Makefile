@@ -4,5 +4,8 @@ install:
 generate_ins:
 	python src/generate_instance.py
 
+run:
+	python src/optimaze.py
+
 test:
 	python -m pytest .
